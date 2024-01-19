@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #136c72;
+    padding: 1em 0;
+}
+
+.logo {
+    margin-right: 1em;
+}
+
+.nav {
+    align-items: center;
+    /* width: 100%; */
+    flex-grow: 1;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.nav__link {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav__link--btn {
+    background-color: #fff;
+    color: #136c72;
+    padding: 0.25em 1em;
+    border-radius: 10em;
+    display: inline-block;
+    width: 100%;
+}
+
+.nav__list--primary {
+    margin: 0 auto;
+    display: flex;
+}
+
+/* hero */
+.hero {
+    padding-block: 100px;
+    background-color: #23424a;
+    color: #fff;
+}
+
+.hero__text {
+    width: 62%;
+}
+
+.hero p {
+    margin-block: 1em 3em;
+}
+
+.hero__text a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424a;
+    font-weight: 900;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
+    border-radius: 100px;
+}
+
+.hero__text a:hover,
+.hero__text a:focus {
+    opacity: 0.75;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
+}
+
+.accent-cyan {
+    color: #23424a;
+}
+
+.two-col {
+    padding-block: 2em;
+}
+
+.left-col p {
+    color: #3a3a3a;
+}
+
+.left-col > p {
+    margin-block: 1em;
+}
+
+.sidebar {
+    background-color: #136c72;
+    color: #fff;
+    text-align: center;
+    width: 35%;
+    padding: 2em;
+}
+
+.left-col {
+    width: 62%;
+    padding-top: 2em;
+}
+
+.sidebar p {
+    padding-block: 1em 3em;
+}
+
+@media (max-width: 600px) {
+    .row {
+        display: block;
+    }
+
+    .hero__text,
+    .hero__img,
+    .left-col,
+    .sidebar {
+        width: 100%;
+    }
+
+    .hero__img {
+        margin-top: 2em;
+    }
+}

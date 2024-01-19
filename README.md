@@ -10,7 +10,6 @@ This repository is a comprehensive record of my HTML and CSS learning journey, f
 
 - Comprehensive examples and projects covering a wide range of HTML and CSS concepts.
 - Responsive design techniques to ensure web pages look great on all devices.
-- Innovative use of CSS animations and effects to create engaging user experiences.
 - Best practices for semantic HTML and modern CSS layouts.
 
 ## Technologies Used

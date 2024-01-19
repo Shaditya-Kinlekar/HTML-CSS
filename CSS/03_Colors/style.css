@@ -1,0 +1,18 @@
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #E5EFF9;
+  color:  #112A46;
+}
+
+p {
+    color: rgb(0, 0, 0, 0.5);
+    /* 
+        last number represents transparency
+     */
+}
+
+.p3 {
+    color: #112A46;
+}

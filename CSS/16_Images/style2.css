@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: aliceblue;
+  background-image: url(images/bubbles.png),
+    linear-gradient(to left, steelblue, #fff);
+  background-repeat: repeat-y, no-repeat;
+  /*      bagcroud img <-|     |->linear gradient  */
+  background-position: right center;
+  background-size: 20%, auto;
+}

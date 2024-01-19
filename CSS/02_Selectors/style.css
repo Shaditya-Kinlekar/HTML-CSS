@@ -1,0 +1,59 @@
+html {
+  font-size: 20px;
+  /* 
+      other elements will inherit this
+  */
+}
+
+/* 
+    top-to-down approach
+    1st it will apply body settings, then main & others line by line but u can overcome this by specificity
+*/
+body {
+  background-color: beige;
+}
+
+main {
+  font-family: monospace;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+p {
+  color: purple;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+.red {
+  color: red;
+}
+
+#green {
+  color: green;
+  font-style: italic;
+}
+
+/* universal selector -> u do not inherit from the * selector,
+ it just selects everything
+      * {
+          background-color: beige;
+        }
+ */
+
+/* 
+        (id)# > .(class) > element selector(eg.<p>) 
+         -> in terms of specificity
+ */
+
+/*         p {
+          color: purple!important;
+          } 
+          --will override everything          
+ */

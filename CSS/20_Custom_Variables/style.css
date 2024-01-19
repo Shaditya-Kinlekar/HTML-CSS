@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* everything inherits from this pseudo class */
+  /* FONT */
+  --FF: "Nunito", sans-serif;
+  --FS: 1.5rem;
+  --FS-XL: 3rem;
+
+  /* COLOR */
+  --bgcolor: #475569;
+  --alt-bgcolor: #1e293b;
+  --radial-color: whitesmoke;
+  --light-color: whitesmoke;
+  --dark-color: #000;
+
+  /* SQUARE */
+  --square-bgcolor: papayawhip;
+  --square-size: max(150px, 20vw);
+
+  /* GENERAL */
+  --padding: 0.5rem;
+  --shadows: 0 6px 10px -5px var(--dark-color);
+  --borders: 2px solid var(--dark-color);
+}
+
+/* for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgcolor: #000;
+    --alt-bgcolor: #333;
+    --radial-color: rgb(216, 216, 216);
+    --square-bgcolor: rgb(202, 174, 202);
+  }
+}
+
+/* || GENERAL STYLES */
+body {
+  font: var(--FS) var(--FF);
+  min-height: 100vh;
+
+  background-color: var(--bgcolor);
+  background-image: radial-gradient(var(--radial-color), var(--bgcolor));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: var(--alt-bgcolor);
+  color: var(--light-color);
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: var(--padding);
+  border-bottom: var(--borders);
+  box-shadow: var(--shadows);
+}
+
+main {
+  flex-grow: 1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: min(4vw, 15px);
+}
+
+footer {
+  bottom: 0;
+}
+
+/* FEATURES */
+.square--highlight {
+  --square-bgcolor: cornflowerblue;
+}
+
+.square {
+  background-color: var(--square-bgcolor);
+  width: var(--square-size);
+  height: var(--square-size);
+  border: var(--borders);
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  font-size: var(--FS-XL);
+  box-shadow: var(--shadows);
+}

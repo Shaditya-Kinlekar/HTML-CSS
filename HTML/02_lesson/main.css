@@ -1,0 +1,44 @@
+html {
+  font-size: 22px;
+}
+body {
+  background-color: #1b2430;
+  color: #d6d5a8;
+}
+a {
+  color: hotpink;
+}
+a:visited {
+  color: cyan;
+}
+a:hover,
+a:active {
+  color: #eee;
+}
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+table {
+  color: black;
+}
+caption {
+  background-color: slategrey;
+}
+thead {
+  background-color: coral;
+}
+tbody {
+  background-color: darkkhaki;
+}
+tfoot {
+  background-color: darkkhaki;
+}
+
